@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--일 월 화 수 목 금 토  VIEW -->
+<com.runfive.calendarlib.view.SquareCellView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="@color/colorGray"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"/>

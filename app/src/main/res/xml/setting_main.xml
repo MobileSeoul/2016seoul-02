@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference android:title="화면 유지" android:icon="@drawable/ic_menu_black_24dp" android:defaultValue="false" android:summary="화면 유지를 설정합니다." android:key="pref_display"/>
+
+    <CheckBoxPreference android:title="음성 안내" android:icon="@drawable/ic_menu_black_24dp" android:defaultValue="false" android:summary="음성 안내를 설정합니다." android:key="pref_voice"/>
+
+    <CheckBoxPreference android:title="알림 설정" android:icon="@drawable/ic_menu_black_24dp" android:defaultValue="false" android:summary="알림을 설정합니다." android:key="pref_alarm"/>
+
+    <Preference android:title="FAQ" android:icon="@drawable/ic_menu_black_24dp" android:summary="자주 묻는 질문" android:key="pref_faq"/>
+
+    <Preference android:title="이용 약관" android:icon="@drawable/ic_menu_black_24dp" android:summary=" " android:key="pref_access"/>
+
+</PreferenceScreen>

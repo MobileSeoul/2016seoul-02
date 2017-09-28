@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "737657920115",
+    "project_id": "gcmdemo-2d376"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737657920115:android:8c2cee30ae7572c4",
+        "android_client_info": {
+          "package_name": "com.runfive.hangangrunner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAavFy3qJ_HyQ_UDtjELnkW679gF02tsWE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="arc_line_width">14dp</dimen>
+    <dimen name="arc_rule_height">14dp</dimen>
+    <dimen name="default_text_size">20dp</dimen>
+    <!-- 指针圆点的半径 -->
+    <dimen name="pointer_circle_radius">4dp</dimen>
+    <!-- 指针距离刻度距离 -->
+    <dimen name="chart_point_margin_top">16dp</dimen>
+    <!-- 刻度距离外环距离 -->
+    <dimen name="chart_rule_maring_top">4dp</dimen>
+
+    <!-- 刻度的宽度，角度：0-180 -->
+    <integer name="default_rule_width">3</integer>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Setting.FaqActivity">
+
+
+    <TextView
+        android:id="@+id/FAQ_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="# 소모칼로리 계산 방법\n\n
+달린거리 1km 기준 84kcal 소모하는 것으로 계산합니다."
+        android:textColor="#555555"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/FAQ_01"
+        android:id="@+id/tab_01"
+        android:background="#555555"/>
+
+    <TextView
+        android:text="# 메달획득 기준\n\n
+달린거리/100*메달점수(금메달 7,은메달 5, 동메달 3)- 소수점은 제외합니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:id="@+id/FAQ_02"
+        android:layout_below="@+id/tab_01"
+        android:textSize="15dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#555555"
+        android:layout_below="@+id/FAQ_02"
+        android:id="@+id/tab_02"
+        />
+
+    <TextView
+        android:text="# 사용자별 추천루트 선정방법\n\n
+현재 자신의 위치와 가장 가까운 코스를 나열해줍니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:layout_below="@+id/tab_02"
+        android:id="@+id/FAQ_03"
+        android:textSize="15dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#555555"
+        android:layout_below="@+id/FAQ_03"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tab_03"/>
+
+    <TextView
+        android:text="# 테마루트 선정 기준\n\n
+한강 공원별로 한강마라톤 코스를 참고하여 자체적으로 선정하였습니다."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:layout_below="@+id/tab_03"
+        android:id="@+id/FAQ_04"
+        android:textSize="15dp"
+        />
+
+
+
+</RelativeLayout>

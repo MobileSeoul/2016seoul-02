@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HanGangInfo.InfoMapActivity">
+
+    <item android:id="@+id/action_my_location"
+        android:icon="@drawable/hanganginfo_location"
+        android:title="내 위치"
+        app:showAsAction="always"/>
+    <item android:id="@+id/facilities"
+        android:icon="@drawable/hanganginfo_menu"
+        android:title="시설물, 장소"
+        app:showAsAction="always">
+
+        <menu>
+            <group>
+                <item android:id="@+id/lawn_position"
+                    android:title="잔디밭 위치"></item>
+                <item android:id="@+id/water_position"
+                    android:title="식수대 위치"></item>
+                <item android:id="@+id/px_position"
+                    android:title="매점 위치"></item>
+                <item android:id="@+id/footvolleyball_position"
+                    android:title="족구장 위치"></item>
+                <item android:id="@+id/bike_rent_position"
+                    android:title="자전거 대여소"></item>
+                <item android:id="@+id/tennis_position"
+                    android:title="테니스장 위치"></item>
+                <item android:id="@+id/parking_position"
+                    android:title="주차장 위치"></item>
+                <item android:id="@+id/soccer_position"
+                    android:title="축구장 위치"></item>
+                <item android:id="@+id/badminton_position"
+                    android:title="배드민턴장 위치"></item>
+                <!-- 공공데이터 파싱 문제 ( 부정확한 정보 ? )
+                <item android:id="@+id/playground_position"
+                    android:title="어린이 놀이터 위치"></item>
+                    -->
+
+            </group>
+        </menu>
+    </item>
+</menu>

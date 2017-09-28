@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              tools:context=".Setting.AccessTermActivity"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(계약당사자의 의무)\n-관리자의 의무\n관리자는 서비스 제공과 관련해서 알고 있는 회원의 신상 정보를 본인의 승낙 없이 제3자에게 누설하거나 배포하지 않습니다. 단,전기통신기본법 등 법률의 규정에 의해 국가기관의 요구가 있는 경우, 범죄에 대한 수사상의 목적이 있거나 또는 기타 관계법령에서 정한 절차에 의한 요청이 있을 경우에는 그러하지 아니합니다."
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-회원의 의무\n1.회원은 서비스를 이용할 때 다음 각호의 행위를 하지 않아야합니다.\n(1). 다른 회원의 ID를 부정하게 사용하는 행위\n(2). 서비스에서 얻은 정보를 복제, 출판 또는 제3자에게 제공하는 행위\n(3). 해당 어플리케이션의 저작권, 제 3자의 저작권 등 기타 권리를 침해하는 행위\n(4). 범죄와 결부된다고 객관적으로 판단되는 행위\n(5). 관리자를 사칭, 혼동시키거나 이와 유사하다고 판단되는 행위\n(6). 기타 관계법령에 위반되는 행위\n"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. 회원은 서비스를 이용하여 영업활동을 할 수 없으면, 영업활동에 이용하여 발생한 결과에 대하여 관리자는 책임을 지지 않습니다.\n\n3. 회원은 서비스의 이용권한, 기타 이용계약상 지위를 타인에게 양도하거나 증여할 수 없으며, 이를 담보로도 제공할 수 없습니다."
+        android:textSize="15dp"/>
+
+
+</LinearLayout>

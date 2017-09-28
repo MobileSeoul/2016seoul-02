@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Panorama.PanoramaActivity">
+    <item android:id="@+id/facilities"
+        android:icon="@drawable/hanganginfo_menu"
+        android:title="대교선택"
+        app:showAsAction="always">
+
+        <menu>
+            <group>
+                <item android:id="@+id/hangang_bridge"
+                    android:title="한강대교"></item>
+                <item android:id="@+id/yanghwa_bridge"
+                    android:title="양화대교"></item>
+                <item android:id="@+id/seogang_bridge"
+                    android:title="서강대교"></item>
+                <item android:id="@+id/mapo_bridge"
+                    android:title="마포대교"></item>
+                <item android:id="@+id/onehyo_bridge"
+                    android:title="원효대교"></item>
+                <item android:id="@+id/banpo_bridge"
+                    android:title="반포대교"></item>
+                <item android:id="@+id/seongsan_bridge"
+                    android:title="성산대교"></item>
+                <item android:id="@+id/jamsil_bridge"
+                    android:title="잠실대교"></item>
+                <item android:id="@+id/jamsilsubway_bridge"
+                    android:title="잠실철교"></item>
+                <item android:id="@+id/olympic_bridge"
+                    android:title="올림픽대교"></item>
+                <item android:id="@+id/dongjak_bridge"
+                    android:title="동작대교"></item>
+                <item android:id="@+id/dongho_bridge"
+                    android:title="동호대교"></item>
+                <item android:id="@+id/seongsu_bridge"
+                    android:title="성수대교"></item>
+                <item android:id="@+id/chungdam_bridge"
+                    android:title="청담대교"></item>
+
+
+            </group>
+        </menu>
+    </item>
+</menu>

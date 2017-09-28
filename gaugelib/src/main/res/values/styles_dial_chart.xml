@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 一个简单的油表 -->
+    <declare-styleable name="DialChartView">
+        <!-- 标题 -->
+        <attr name="chart_title" format="string"/>
+        <!-- 标题文本大小 -->
+        <attr name="chart_title_textSize" format="dimension"/>
+        <!-- 全局元素颜色 -->
+        <attr name="golbal_color" format="color"/>
+        <!-- 初始化时刻度值 -->
+        <attr name="init_precent" format="float" />
+        <!-- 标题在布局中的位置 -->
+        <attr name="chart_title_locationY_frac" format="float" />
+        <!-- 标题在布局中的位置 -->
+        <attr name="precent_text_size" format="dimension" />
+        <!-- 刻度个数 -->
+        <attr name="rule_num" format="integer" />
+    </declare-styleable>
+
+</resources>

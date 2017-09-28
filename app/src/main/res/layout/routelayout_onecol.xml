@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- 리스트뷰 한 조각을 나타내는 틀이다 -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iconItem"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="8dp"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="93dp"
+        android:layout_height="80dp"
+        android:id="@+id/course"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorGray"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="93dp"
+        android:layout_height="80dp"
+        android:id="@+id/place"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorGray"
+
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="93dp"
+        android:layout_height="80dp"
+        android:id="@+id/distance"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:textColor="@color/colorGray"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.runfive.hangangrunner">
+
+    <permission android:name="com.runfive.hangangrunner.permission.MAS_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.runfive.hangangrunner.permission.MAS_RECEIVE"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        tools:replace="android:icon"
+        android:name="android.support.multidex.MultiDexApplication"
+        >
+
+
+        <!-- 구글맵 라이브러리 사용 -->
+        <uses-library android:name="com.google.android.maps"/>
+
+        <!--구글맵 메타데이터 9452000-->
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="YOUR_KEY"/>
+
+        <meta-data android:name="com.google.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+
+        <!--처음에 스플래시 -->
+        <activity android:name=".Login.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+        <activity android:name=".Login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+        <activity
+            android:name=".Main.MainActivity"
+            android:label="@string/app_name"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Route.RouteActivity"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <!--
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /> -->
+
+        </activity>
+
+        <activity
+            android:name=".RouteCourse.RouteCourseActivity"
+            android:parentActivityName=".Route.RouteActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Record.RecordActivity"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <!--
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" /> -->
+
+        </activity>
+
+        <activity android:name=".Ranking.RankingActivity"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".Running.RunningActivity"
+            android:label="Running"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".Setting.FaqActivity"
+            android:parentActivityName=".Setting.SettingActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Setting.AccessTermActivity"
+            android:parentActivityName=".Setting.SettingActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity
+            android:name=".Service.ServiceActivity"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".Profile.ProfileActivity"
+            android:label="Profile"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+
+
+
+
+        <activity android:name=".HanGangInfo.HangGangInfoMapActivity"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".Setting.SettingActivity"
+            android:parentActivityName=".Main.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".Panorama.PanoramaActivity"
+            android:parentActivityName=".Main.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!--페이스북-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1798402837045513"
+            android:exported="true" />
+        <!--페이스북 끝-->
+
+        <!--네이버 -->
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app"/>
+
+        <!--네이버 끝-->
+
+
+        <!-- GCM 리시버 -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.runfive.hangangrunner"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 경보설정 -->
+        <receiver android:name=".Running.RunningMapFragment$IntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+
+            android:name=".Service.MyService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+    </application>
+
+</manifest>
